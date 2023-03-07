@@ -4,8 +4,9 @@ CC = g++
 CFLAGS = -g -fsanitize=address
 
 SRC_DIR = ./Src/
+APP_DIR = ./App/
 
-SRC = 	$(SRC_DIR)main.cpp			\
+SRC = 	$(APP_DIR)main.cpp			\
 	  	$(SRC_DIR)Solvers.cpp		\
 		$(SRC_DIR)Interactors.cpp
 
