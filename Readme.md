@@ -1,6 +1,6 @@
 # SquareSolver
 
- Program for solving square equations.
+ App for solving square equations.
 
 ## Build and run
 
@@ -24,4 +24,4 @@
 
 ## Tests
 
- Program ios tested, but you can test it more in ``./Test`` directory by writing unit tests in ``./Test/TestInfo.txt``.
+ Program is tested, but you can test it more in ``./Test`` directory by writing unit tests in ``./Test/TestInfo.txt``.
