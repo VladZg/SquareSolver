@@ -8,7 +8,7 @@
 
 ## Examples of work
 
- App works in terminal, so all input and output info is also there. Type coefficients of quadratic equation at first, then type <Enter>, app will solve your task. There are three possible ways:
+ App works in terminal, so all input and output info is also there. Type coefficients of quadratic equation at first, then type Enter, app will solve your task. There are three possible ways:
 
 ### Equation has 2 roots:
 
