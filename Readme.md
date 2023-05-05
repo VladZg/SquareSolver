@@ -1,15 +1,25 @@
-# Programm for solving square equations
+# SquareSolver
 
-## How to build project
+ Program for solving square equations
 
-To compile the project to file ".\main" run ``make`` in the root directory
+## Build and run
+
+ To compile the project to file run ``make`` in the root directory, it will create ``.\main`` file. Run this file to start app. 
 
 ## Examples of work
 
-### Equation with 2 roots:
+ App works in terminal, so all input and output info is also there. Type coefficients of quadratic equation at first, then type <Enter>, app will solve your task. There are three possible ways: 
+
+### Equation has 2 roots:
 
 ![Example 1](Figures/Example1.png)
 
-### Equation with no roots:
+### Equation has 1 root only:
+
+![Example 1](Figures/Example1.png)
+
+### Equation has no roots:
 
 ![Example 2](Figures/Example2.png)
+
+## Programm is tested
