@@ -1,0 +1,80 @@
+\hypertarget{_square_solver_test_8cpp}{}\doxysection{Square\+Solver\+Test.\+cpp File Reference}
+\label{_square_solver_test_8cpp}\index{SquareSolverTest.cpp@{SquareSolverTest.cpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Solvers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Consts.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Colour\+Consts.\+h\char`\"{}}\newline
+Include dependency graph for Square\+Solver\+Test.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_square_solver_test_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_square_solver_test_8cpp_ac6a50ceced693e4e49981f5b8d2e4a8c}{One\+Test\+Square\+Solver}} (int test\+\_\+n, double \mbox{\hyperlink{_interactors_8cpp_aa4c2a5552e9bc49b1816ff532f558c74}{a}}, double b, double c, int n\+\_\+r\+\_\+exp, double x1\+\_\+exp, double x2\+\_\+exp)
+\begin{DoxyCompactList}\small\item\em Функция, проводящая одиночное тестирования функции, решающей квадратные ур-\/я \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_square_solver_test_8cpp_a61957c413575af4ce8888f04ccac6b02}{Test\+Square\+Solver}} ()
+\begin{DoxyCompactList}\small\item\em Функция, осуществляющая множественное тестирование функции, решающей квадратные ур-\/я \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_square_solver_test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Основная функция, запускающая процесс тестирования \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_square_solver_test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_square_solver_test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{SquareSolverTest.cpp@{SquareSolverTest.cpp}!main@{main}}
+\index{main@{main}!SquareSolverTest.cpp@{SquareSolverTest.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Основная функция, запускающая процесс тестирования 
+
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_square_solver_test_8cpp_ac6a50ceced693e4e49981f5b8d2e4a8c}\label{_square_solver_test_8cpp_ac6a50ceced693e4e49981f5b8d2e4a8c}} 
+\index{SquareSolverTest.cpp@{SquareSolverTest.cpp}!OneTestSquareSolver@{OneTestSquareSolver}}
+\index{OneTestSquareSolver@{OneTestSquareSolver}!SquareSolverTest.cpp@{SquareSolverTest.cpp}}
+\doxysubsubsection{\texorpdfstring{OneTestSquareSolver()}{OneTestSquareSolver()}}
+{\footnotesize\ttfamily int One\+Test\+Square\+Solver (\begin{DoxyParamCaption}\item[{int}]{test\+\_\+n,  }\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{c,  }\item[{int}]{n\+\_\+r\+\_\+exp,  }\item[{double}]{x1\+\_\+exp,  }\item[{double}]{x2\+\_\+exp }\end{DoxyParamCaption})}
+
+
+
+Функция, проводящая одиночное тестирования функции, решающей квадратные ур-\/я 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em test\+\_\+n} & Количество найденных решений квадратного ур-\/я \\
+\hline
+\mbox{\texttt{ in}}  & {\em a} & Коэффицент квадратного ур-\/я перед x$\ast$x \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & Коэффицент квадратного ур-\/я перед x \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & Свободный член квадратного ур-\/я \\
+\hline
+\mbox{\texttt{ in}}  & {\em n\+\_\+r\+\_\+exp} & Ожидаемое кол-\/во корней квадратного ур-\/я \\
+\hline
+\mbox{\texttt{ in}}  & {\em x1\+\_\+exp} & Первый ожидаемый корень квадратного ур-\/я (если нет, то 0) \\
+\hline
+\mbox{\texttt{ in}}  & {\em x2\+\_\+exp} & Второй ожидаемый корень квадратного ур-\/я (если нет, то 0) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 -\/ если тестируемая функция сработала правильно, 0 -\/ в ином случае 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_square_solver_test_8cpp_a61957c413575af4ce8888f04ccac6b02}\label{_square_solver_test_8cpp_a61957c413575af4ce8888f04ccac6b02}} 
+\index{SquareSolverTest.cpp@{SquareSolverTest.cpp}!TestSquareSolver@{TestSquareSolver}}
+\index{TestSquareSolver@{TestSquareSolver}!SquareSolverTest.cpp@{SquareSolverTest.cpp}}
+\doxysubsubsection{\texorpdfstring{TestSquareSolver()}{TestSquareSolver()}}
+{\footnotesize\ttfamily void Test\+Square\+Solver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция, осуществляющая множественное тестирование функции, решающей квадратные ур-\/я 
+

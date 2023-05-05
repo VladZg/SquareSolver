@@ -1,0 +1,99 @@
+\hypertarget{_solvers_8h}{}\doxysection{Solvers.\+h File Reference}
+\label{_solvers_8h}\index{Solvers.h@{Solvers.h}}
+{\ttfamily \#include \char`\"{}Consts.\+h\char`\"{}}\newline
+Include dependency graph for Solvers.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=135pt]{_solvers_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{_solvers_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_solvers_8h_aec22080dcfdfbd0d7666db5558b2b702}{Compare\+Double\+With\+Zero}} (double \mbox{\hyperlink{_interactors_8cpp_aa4c2a5552e9bc49b1816ff532f558c74}{a}})
+\begin{DoxyCompactList}\small\item\em Функция, сравнивающая число типа double с нулём \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_solvers_8h_a17b8298895281839ce77efd44ef3ac61}{Linear\+Solver}} (double b, double c, double $\ast$x1)
+\begin{DoxyCompactList}\small\item\em Функция, решающая линейное ур-\/е вида b$\ast$x + c = 0. \end{DoxyCompactList}\item 
+если ур е не имеет корней \mbox{\hyperlink{_consts_8h_a5a9d5b6cf1893eb9606c3dd24d0758d0}{INF\+\_\+R}} если ур е имеет бесконечное кол во корней int \mbox{\hyperlink{_solvers_8h_a30b77e19811fad75b75e5f5b1345c570}{Square\+Solver}} (double \mbox{\hyperlink{_interactors_8cpp_aa4c2a5552e9bc49b1816ff532f558c74}{a}}, double b, double c, double $\ast$x1, double $\ast$x2)
+\begin{DoxyCompactList}\small\item\em Функция, решающая квадратное ур-\/е вида a$\ast$x$\ast$x + b$\ast$x + c = 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_solvers_8h_aec22080dcfdfbd0d7666db5558b2b702}\label{_solvers_8h_aec22080dcfdfbd0d7666db5558b2b702}} 
+\index{Solvers.h@{Solvers.h}!CompareDoubleWithZero@{CompareDoubleWithZero}}
+\index{CompareDoubleWithZero@{CompareDoubleWithZero}!Solvers.h@{Solvers.h}}
+\doxysubsubsection{\texorpdfstring{CompareDoubleWithZero()}{CompareDoubleWithZero()}}
+{\footnotesize\ttfamily int Compare\+Double\+With\+Zero (\begin{DoxyParamCaption}\item[{double}]{a }\end{DoxyParamCaption})}
+
+
+
+Функция, сравнивающая число типа double с нулём 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & Первое сравниваемое число типа double \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & Второе сравниваемое число типа double \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 -\/ если a равно нулю, 0 -\/ если a отлично от нуля 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_solvers_8h_a17b8298895281839ce77efd44ef3ac61}\label{_solvers_8h_a17b8298895281839ce77efd44ef3ac61}} 
+\index{Solvers.h@{Solvers.h}!LinearSolver@{LinearSolver}}
+\index{LinearSolver@{LinearSolver}!Solvers.h@{Solvers.h}}
+\doxysubsubsection{\texorpdfstring{LinearSolver()}{LinearSolver()}}
+{\footnotesize\ttfamily int Linear\+Solver (\begin{DoxyParamCaption}\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x1 }\end{DoxyParamCaption})}
+
+
+
+Функция, решающая линейное ур-\/е вида b$\ast$x + c = 0. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b} & Коэффицент линейного ур-\/я перед x \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & Свободный член линейного ур-\/я \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1} & Указатель на переменную корня ур-\/я \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 -\/ если ур-\/е имеет единственный корень, INF\+\_\+R -\/ если ур-\/е имеет бесконечное кол-\/во корней 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_solvers_8h_a30b77e19811fad75b75e5f5b1345c570}\label{_solvers_8h_a30b77e19811fad75b75e5f5b1345c570}} 
+\index{Solvers.h@{Solvers.h}!SquareSolver@{SquareSolver}}
+\index{SquareSolver@{SquareSolver}!Solvers.h@{Solvers.h}}
+\doxysubsubsection{\texorpdfstring{SquareSolver()}{SquareSolver()}}
+{\footnotesize\ttfamily если ур е не имеет корней \mbox{\hyperlink{_consts_8h_a5a9d5b6cf1893eb9606c3dd24d0758d0}{INF\+\_\+R}} если ур е имеет бесконечное кол во корней int Square\+Solver (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x1,  }\item[{double $\ast$}]{x2 }\end{DoxyParamCaption})}
+
+
+
+Функция, решающая квадратное ур-\/е вида a$\ast$x$\ast$x + b$\ast$x + c = 0. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & Коэффицент линейного ур-\/я перед x$\ast$x \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & Коэффицент линейного ур-\/я перед x \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & Свободный член линейного ур-\/я \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1} & Указатель на переменную первого корня ур-\/я \\
+\hline
+\mbox{\texttt{ out}}  & {\em x2} & Указатель на переменную второго корня ур-\/я \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+2 -\/ если ур-\/е имеет 2 корня, 1 -\/ если ур-\/е имеет единственный корень, \textbackslash{} 
+\end{DoxyReturn}

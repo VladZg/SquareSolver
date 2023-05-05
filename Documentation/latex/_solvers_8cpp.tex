@@ -1,0 +1,94 @@
+\hypertarget{_solvers_8cpp}{}\doxysection{Solvers.\+cpp File Reference}
+\label{_solvers_8cpp}\index{Solvers.cpp@{Solvers.cpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Consts.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Assert.\+h\char`\"{}}\newline
+Include dependency graph for Solvers.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{_solvers_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_solvers_8cpp_a903c1d6745f8a43b91ff42c6aaa3d362}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}(\mbox{\hyperlink{_interactors_8cpp_aa4c2a5552e9bc49b1816ff532f558c74}{a}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_solvers_8cpp_a9f73db212606439bfa376a60e41b88d3}{Compare\+Doubles}} (double \mbox{\hyperlink{_interactors_8cpp_aa4c2a5552e9bc49b1816ff532f558c74}{a}}, double b) \mbox{\hyperlink{_solvers_8cpp_a903c1d6745f8a43b91ff42c6aaa3d362}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}((vvzsr))
+\item 
+int \mbox{\hyperlink{_solvers_8cpp_a1edc951bae3b30f89cfe9b03c76ccd78}{Linear\+Solver}} (double b, double c, double $\ast$x)
+\begin{DoxyCompactList}\small\item\em Функция, решающая линейное ур-\/е вида b$\ast$x + c = 0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_solvers_8cpp_a8edc4fa61fb814383859a502432261fc}{Square\+Solver}} (double \mbox{\hyperlink{_interactors_8cpp_aa4c2a5552e9bc49b1816ff532f558c74}{a}}, double b, double c, double $\ast$x1, double $\ast$x2)
+\begin{DoxyCompactList}\small\item\em Функция, решающая квадратное ур-\/е вида a$\ast$x$\ast$x + b$\ast$x + c = 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_solvers_8cpp_a903c1d6745f8a43b91ff42c6aaa3d362}\label{_solvers_8cpp_a903c1d6745f8a43b91ff42c6aaa3d362}} 
+\index{Solvers.cpp@{Solvers.cpp}!\_\_attribute\_\_@{\_\_attribute\_\_}}
+\index{\_\_attribute\_\_@{\_\_attribute\_\_}!Solvers.cpp@{Solvers.cpp}}
+\doxysubsubsection{\texorpdfstring{\_\_attribute\_\_}{\_\_attribute\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+attribute\+\_\+\+\_\+(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_interactors_8cpp_aa4c2a5552e9bc49b1816ff532f558c74}{a}} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_solvers_8cpp_a9f73db212606439bfa376a60e41b88d3}\label{_solvers_8cpp_a9f73db212606439bfa376a60e41b88d3}} 
+\index{Solvers.cpp@{Solvers.cpp}!CompareDoubles@{CompareDoubles}}
+\index{CompareDoubles@{CompareDoubles}!Solvers.cpp@{Solvers.cpp}}
+\doxysubsubsection{\texorpdfstring{CompareDoubles()}{CompareDoubles()}}
+{\footnotesize\ttfamily int Compare\+Doubles (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_solvers_8cpp_a1edc951bae3b30f89cfe9b03c76ccd78}\label{_solvers_8cpp_a1edc951bae3b30f89cfe9b03c76ccd78}} 
+\index{Solvers.cpp@{Solvers.cpp}!LinearSolver@{LinearSolver}}
+\index{LinearSolver@{LinearSolver}!Solvers.cpp@{Solvers.cpp}}
+\doxysubsubsection{\texorpdfstring{LinearSolver()}{LinearSolver()}}
+{\footnotesize\ttfamily int Linear\+Solver (\begin{DoxyParamCaption}\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x1 }\end{DoxyParamCaption})}
+
+
+
+Функция, решающая линейное ур-\/е вида b$\ast$x + c = 0. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b} & Коэффицент линейного ур-\/я перед x \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & Свободный член линейного ур-\/я \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1} & Указатель на переменную корня ур-\/я \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 -\/ если ур-\/е имеет единственный корень, INF\+\_\+R -\/ если ур-\/е имеет бесконечное кол-\/во корней 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_solvers_8cpp_a8edc4fa61fb814383859a502432261fc}\label{_solvers_8cpp_a8edc4fa61fb814383859a502432261fc}} 
+\index{Solvers.cpp@{Solvers.cpp}!SquareSolver@{SquareSolver}}
+\index{SquareSolver@{SquareSolver}!Solvers.cpp@{Solvers.cpp}}
+\doxysubsubsection{\texorpdfstring{SquareSolver()}{SquareSolver()}}
+{\footnotesize\ttfamily int Square\+Solver (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x1,  }\item[{double $\ast$}]{x2 }\end{DoxyParamCaption})}
+
+
+
+Функция, решающая квадратное ур-\/е вида a$\ast$x$\ast$x + b$\ast$x + c = 0. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & Коэффицент линейного ур-\/я перед x$\ast$x \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & Коэффицент линейного ур-\/я перед x \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & Свободный член линейного ур-\/я \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1} & Указатель на переменную первого корня ур-\/я \\
+\hline
+\mbox{\texttt{ out}}  & {\em x2} & Указатель на переменную второго корня ур-\/я \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+2 -\/ если ур-\/е имеет 2 корня, 1 -\/ если ур-\/е имеет единственный корень, \textbackslash{} 
+\end{DoxyReturn}

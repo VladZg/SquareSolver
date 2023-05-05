@@ -12,4 +12,4 @@ To compile the project to file ".\main" run ``make`` in the root directory
 
 ### Equation with no roots:
 
-![Example 2](Figures/Example2.png)
+![Example ](Figures/Example2.png)

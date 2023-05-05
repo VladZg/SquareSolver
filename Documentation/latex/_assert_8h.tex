@@ -1,0 +1,52 @@
+\hypertarget{_assert_8h}{}\doxysection{Assert.\+h File Reference}
+\label{_assert_8h}\index{Assert.h@{Assert.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Colour\+Consts.\+h\char`\"{}}\newline
+Include dependency graph for Assert.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{_assert_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{_assert_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_assert_8h_ac22830a985e1daed0c9eadba8c6f606e}{ASSERT}}(condition)
+\begin{DoxyCompactList}\small\item\em Макрос, печатающий сообщение об ошибке в заданном условии, если оно неверно \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_assert_8h_ac22830a985e1daed0c9eadba8c6f606e}\label{_assert_8h_ac22830a985e1daed0c9eadba8c6f606e}} 
+\index{Assert.h@{Assert.h}!ASSERT@{ASSERT}}
+\index{ASSERT@{ASSERT}!Assert.h@{Assert.h}}
+\doxysubsubsection{\texorpdfstring{ASSERT}{ASSERT}}
+{\footnotesize\ttfamily \#define ASSERT(\begin{DoxyParamCaption}\item[{}]{condition }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{        \{                                                                             \(\backslash\)}
+\DoxyCodeLine{        if (!(condition))                                                             \(\backslash\)}
+\DoxyCodeLine{            fprintf(stderr, \mbox{\hyperlink{_colour_consts_8h_a66290957baed5df3930ada4cb8caccf1}{KRED}} \textcolor{stringliteral}{"{}Error in '\%s' in line \%d in file \%s in \%s\(\backslash\)n"{}} \mbox{\hyperlink{_colour_consts_8h_a137aa83ec74421d226a90c92ec032ac9}{KNRM}},  \(\backslash\)}
+\DoxyCodeLine{                    \#condition, \_\_LINE\_\_, \_\_FILE\_\_, \_\_PRETTY\_FUNCTION\_\_);             \(\backslash\)}
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+
+
+Макрос, печатающий сообщение об ошибке в заданном условии, если оно неверно 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em condition} & Проверяемое условие \\
+\hline
+\end{DoxyParams}
