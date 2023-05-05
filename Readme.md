@@ -1,6 +1,6 @@
 # SquareSolver
 
- Program for solving square equations
+ Program for solving square equations.
 
 ## Build and run
 
@@ -12,15 +12,16 @@
 
 ### Equation has 2 roots:
 
-![Example 1](Figures/Example1.png)
+ ![Example 1](Pictures/Example1.png)
 
 ### Equation has 1 root only:
 
-![Example 1](Figures/Example1.png)
+ ![Example 2](Pictures/Example2.png)
 
 ### Equation has no roots:
 
-![Example 2](Figures/Example2.png)
+ ![Example 3](Pictures/Example3.png)
 
-## Programm is tested
-![Example ](Figures/Example2.png)
+## Tests
+
+ Program ios tested, but you can test it more in ``./Test`` directory by writing unit tests in ``./Test/TestInfo.txt``.
